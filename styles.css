@@ -1,0 +1,102 @@
+body{
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p{
+    font-size: 22px;
+}
+
+li{
+    font-size: 150%;
+}
+
+.titlepage span{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.titlepage{
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100vh;
+    background-image: url(C:/Users/Sean/Documents/GitHub/personalwebsite/Personal-Website/images/background2.jpg);
+    color: aliceblue;
+}
+
+.titlepage h1{
+    font-size: 100px;
+    color: aliceblue;
+}
+
+
+.page{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    
+}
+
+.page h1{
+    text-align: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+.btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #42DCA3;
+  outline: none;
+  color: black;
+  background-color: #42DCA3;
+}
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+.footer span{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer{
+    display: table;
+    text-align: center;
+    width: 100%;
+    background-color: #000033;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer p{
+    font-size: 16px;
+    color: aliceblue;
+}

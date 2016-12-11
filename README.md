@@ -1,2 +1,2 @@
 # Personal-Website
-redo website showcasing personal portfolio
+basic portfolio website showcasing projects, resume, and contact information

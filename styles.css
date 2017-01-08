@@ -1,12 +1,15 @@
 head{
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
+navbar-header{
+    font-family: 'Roboto', sans-serif;
+}
 p{
     font-size: 30px;
 }
@@ -110,9 +113,63 @@ li{
     width: 80%;
     height: 70%;
 }
+
+
+.tms-div-parent{
+	
+}
+
+.tms-div{
+	
+}
+
+.tms-logo{
+	/* Don't think this ever applies anymore */
+	margin-left: 15px;
+	margin-top: 30px;
+	border: none;
+	height: 180px;
+	width: auto;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.tms-text{
+	margin-top: 20px;
+}
+
+.uw-div-parent{
+	
+}
+
+.uw-div{
+
+
+}
+.uw-logo{
+	margin-left: 130px;
+	margin-top: 90px;
+	border: none;
+	height: auto;
+	width: auto;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.uw-text{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.uw-date{
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+
 .btn {
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Roboto', sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;

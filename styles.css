@@ -36,6 +36,10 @@ li{
     color: aliceblue;
 }
 
+.div p{
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 .page{
     padding-top: 30px;

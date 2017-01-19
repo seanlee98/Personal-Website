@@ -1,14 +1,14 @@
 head{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
 navbar-header{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 p{
     font-size: 30px;
@@ -114,6 +114,13 @@ li{
     height: 70%;
 }
 
+.card-image-globe {
+    margin-top: centered;
+    margin-left: centered;
+    width: 90%;
+    height: 70%;
+}
+
 
 .tms-div-parent{
 	
@@ -166,10 +173,44 @@ li{
 	margin-top: 20px;
 }
 
+.education .container {
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+div {
+    display: block;
+}
 
 .btn {
   text-transform: uppercase;
-font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -177,16 +218,16 @@ font-family: 'Roboto', sans-serif;
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #000000;
+  color: #f2f2f2;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #f2f2f2;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: ##f2f2f2;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -216,7 +257,7 @@ ul.banner-social-buttons {
     display: table;
     text-align: center;
     width: 100%;
-    background-color: #000033;
+    background-color: #1a1a1a;
     padding-top: 10px;
     padding-bottom: 10px;
 }

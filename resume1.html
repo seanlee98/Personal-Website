@@ -22,6 +22,9 @@
     padding:0 25px;
     margin:0 auto
 }
+.resume .resume-heading {
+    font-size:30pt;
+}
 .resume .main .header{
     border-bottom:2px solid #ddd
 }
@@ -93,17 +96,19 @@ category:last-of-type category-item:last-of-type .category,sidebar-category:last
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
     <!-- <script src="resume.js"></script> -->
-    <script>"use strict";angular.module("Resume",["ngMaterial"]).directive("resume",function(){return{restrict:"E",transclude:!0,template:'<div class="resume">\n      <section class="main" ng-transclude></section>\n    </div>'}}).directive("resumeHeading",function(){return{restrict:"E",scope:{firstName:"@",lastName:"@",website:"@",phone:"@",email:"@",github:"@",linkedin:"@"},template:'<div class="header">\n      <div class="page-title-container">\n        <h1 class="page-title page-title-first">{{firstName}}</h1>\n        <h1 class="page-title page-title-last">{{lastName}}</h1>\n      </div>\n      <div class="header-icons">\n        <span ng-if="website" class="md-subhead page-subhead"><i class="fa fa-lg fa-code"></i>{{website}}</span>\n        <span ng-if="phone" class="md-subhead page-subhead"><i class="fa fa-lg fa-phone"></i>{{phone}}</span>\n        <span ng-if="email" class="md-subhead page-subhead"><i class="fa fa-lg fa-envelope"></i>{{email}}</span>\n        <span ng-if="github" class="md-subhead page-subhead"><i class="fa fa-lg fa-github"></i>{{github}}</span>\n        <span ng-if="linkedin" class="md-subhead page-subhead"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</span>\n      </div>\n    </div>'}}).directive("resumeBody",function(){return{restrict:"E",transclude:!0,template:'<div layout="row" ng-transclude></div>'}}).directive("resumeColumn",function(){return{restrict:"E",transclude:!0,template:"<div ng-transclude></div>"}}).directive("sidebarCategory",function(){return{restrict:"E",scope:{name:"@"},transclude:!0,template:'<div flex="" class="category-row">\n      <div class="category">\n        <h5 class="category-row-title">{{name}}</h5>\n        <ng-transclude></ng-transclude>\n      </div>\n    </div>'}}).directive("category",function(){return{restrict:"E",scope:{name:"@"},transclude:!0,template:'<div flex="" class="category-row">\n      <h4 class="category-row-title">{{name}}</h4>\n      <ng-transclude></ng-transclude>\n    </div>'}}).directive("categoryItem",function(){return{restrict:"E",scope:{title:"@",subtitle:"@"},transclude:!0,template:'<div class="category">\n        <h5 class="category-title md-body-2">{{title}}</h5>&nbsp;\n        <h5 class="category-subtitle md-caption">{{subtitle}}</h5>\n        <ul class="category-bullets" ng-transclude></ul>\n    </div>'}});</script>
+    <script>"use strict";angular.module("Resume",["ngMaterial"]).directive("resume",function(){return{restrict:"E",transclude:!0,template:'<div class="resume">\n      <section class="main" ng-transclude></section>\n    </div>'}}).directive("resumeHeading",function(){return{restrict:"E",scope:{firstName:"@",lastName:"@",phone:"@",email:"@",github:"@",linkedin:"@", website:"@"},template:'<div class="header">\n      <div class="page-title-container">\n        <h1 class="page-title page-title-first">{{firstName}}</h1>\n        <h1 class="page-title page-title-last">{{lastName}}</h1>\n      </div>\n      <div class="header-icons">\n    <span ng-if="phone" class="md-subhead page-subhead"><i class="fa fa-lg fa-phone"></i>{{phone}}</span>\n        <span ng-if="email" class="md-subhead page-subhead"><i class="fa fa-lg fa-envelope"></i>{{email}}</span>\n        <span ng-if="github" class="md-subhead page-subhead"><i class="fa fa-lg fa-github"></i>{{github}}</span>\n        <span ng-if="linkedin" class="md-subhead page-subhead"><i class="fa fa-lg fa-linkedin-square"></i>{{linkedin}}</span>\n <span ng-if="website" class="md-subhead page-subhead"><i class="fa fa-lg fa-code"></i>{{website}}</span>\n </div>\n    </div>'}}).directive("resumeBody",function(){return{restrict:"E",transclude:!0,template:'<div layout="row" ng-transclude></div>'}}).directive("resumeColumn",function(){return{restrict:"E",transclude:!0,template:"<div ng-transclude></div>"}}).directive("sidebarCategory",function(){return{restrict:"E",scope:{name:"@"},transclude:!0,template:'<div flex="" class="category-row">\n      <div class="category">\n        <h5 class="category-row-title">{{name}}</h5>\n        <ng-transclude></ng-transclude>\n      </div>\n    </div>'}}).directive("category",function(){return{restrict:"E",scope:{name:"@"},transclude:!0,template:'<div flex="" class="category-row">\n      <h4 class="category-row-title">{{name}}</h4>\n      <ng-transclude></ng-transclude>\n    </div>'}}).directive("categoryItem",function(){return{restrict:"E",scope:{title:"@",subtitle:"@"},transclude:!0,template:'<div class="category">\n        <h5 class="category-title md-body-2">{{title}}</h5>&nbsp;\n        <h5 class="category-subtitle md-caption">{{subtitle}}</h5>\n        <ul class="category-bullets" ng-transclude></ul>\n    </div>'}});</script>
 </head>
 
 <body ng-app="Resume" ng-cloak>
     <resume>
         <resume-heading first-name="Sean"
                         last-name="Lee"
+                        website="seanlee98.me"
                         linkedin="seanlee98"
-                        github="seanlee98"
                         email="s386lee@uwaterloo.ca"
-                        phone="778-822-9447">
+                        phone="778-822-9447"
+                        github="seanlee98"
+                        >
         </resume-heading>
 
         <resume-body>

@@ -17,7 +17,7 @@
 }
 .resume .main{
     height:100%;
-    width:700px;
+    width:800px;
     background-color:#fff;
     padding:0 25px;
     margin:0 auto
@@ -103,7 +103,6 @@ category:last-of-type category-item:last-of-type .category,sidebar-category:last
     <resume>
         <resume-heading first-name="Sean"
                         last-name="Lee"
-                        website="seanlee98.me"
                         linkedin="seanlee98"
                         email="s386lee@uwaterloo.ca"
                         phone="778-822-9447"
@@ -114,8 +113,31 @@ category:last-of-type category-item:last-of-type .category,sidebar-category:last
         <resume-body>
             <resume-column flex="25">
                 <category name="Skills">
-                    <sidebar-category name="Languages">
+                    <sidebar-category name="Mobile Development">
                         <p>Swift</p>
+                        <p>Objective-C</p>
+                        <p>Java</p>
+                        <p>Xamarin</p>
+                    </sidebar-category>
+                    <sidebar-category name="Web Development">
+                        <p>HTML5/CSS3</p>
+                        <p>Javascript</p>
+                        <p>React</p>
+                        <p>Angular</p>
+                        <p>SASS</p>
+                        <p>NodeJS</p>
+                    </sidebar-category>
+                    <sidebar-category name="Other Languages & Frameworks">
+                        <p>C#</p>
+                        <p>C/C++</p>
+                        <p>Azure Service Bus</p>
+                        <p>Azure Service Fabric</p>
+                        <p>ASP.NET Core MVC</p>
+                        <p>Alexa Skill Kit</p>
+                    </sidebar-category>
+                    <!-- <sidebar-category name="Languages">
+                        <p>Swift</p>
+                        <p>Objective-C</p>
                         <p>C#</p>
                         <p>C/C++</p>
                         <p>Java</p>
@@ -123,29 +145,38 @@ category:last-of-type category-item:last-of-type .category,sidebar-category:last
                         <p>Javascript</p>
                     </sidebar-category>
                     <sidebar-category name="Tools & Frameworks">
-                        <p>Azure Service Bus & Service Fabric</p>
+                        <p>React</p>
+                        <p>NodeJS</p>
+                        <p>Azure Service Bus</p>
+                        <p>Azure Service Fabric</p>
                         <p>ASP.NET</p>
                         <p>CORE MVC</p>
-                        <p>AJAX</p>
                         <p>Xamarin</p>
                         <p>Angular</p>
                         <p>Alexa Skill Kit</p>
-                    </sidebar-category>
+                    </sidebar-category> -->
                     <category name="Education">
                     <sidebar-category name="University of Waterloo">
-                        <p>Honours Computer Engineering</p>
+                        <p>B.Asc, Honours Computer Engineering</p>
                         <p>Graduating May 2020</p>
                     </sidebar-category>
                 </category>
-                     <category name= "Interests & Activities">
+                <category name= "Interests & Activities">
                     <sidebar-category>
                         <p>Competitive Powerlifting (OPA/CPU)</p>
                         <p>University of Waterloo Orchestra (Trumpet)</p>
                     </sidebar-category>
                 </category>
+                <category name="Personal Website">
+                    <sidebar-category>
+                        <p><a href="http://seanlee98.github.io">seanlee98.github.io</a></p>
+                    </sidebar-category>
             </resume-column>
-            <resume-column flex="100">
+            <resume-column flex="90">
                 <category name="Professional Experience">
+                    <category-item title = "Agile Software Engineer" subtitle = "TribalScale (Sept 2018 - Present)">
+                        <li>Developed and deployed product website for national pharmaceutic company, with responsive front-end components built on <strong>React</strong> with <strong>SASS</strong> styling and subscription/contact services through <strong>NodeJS</strong></li>
+                    </category-item>
                     <category-item title = "Software Development Intern" subtitle = "Bentley Systems (Jan 2018 - Apr 2018)">
                         <li>Developed and maintained cross-platform features utilizing <strong>Xamarin.Forms</strong> and 3rd-party frameworks for enterprise mobile applications</li>
                         <li>Migrated UI testing coverage to <strong>Visual Studio App Center</strong> to automate tests across hundreds of <strong>Android</strong> and <strong>iOS</strong> devices</li>
@@ -158,13 +189,13 @@ category:last-of-type category-item:last-of-type .category,sidebar-category:last
                         <li>Developed iOS application for a Top Canadian Bank, providing personal financial services to over two million consumers around the world</li>
                         <li>Coordinated with back-end team to implement <strong>REST API</strong> calls and custom <strong>JSON</strong> parser with <strong>Swift</strong></li>
                         <li>Worked extensively with <strong>UIKit</strong> to implement custom UI prescribed by external UX team through <strong>Zeplin</strong> designs</li>
-                        <li>Built custom logging framework and unit test cases (<strong>XCTest</strong>) to optimize debugging and increase robustness of code base</li>
+                        <li>Built custom logging framework and unit test cases (<strong>XCTest</strong>) to optimize debugging and increase robustness of codebase</li>
                         <li>Experienced <strong>JIRA</strong> and <strong>Agile</strong> methodologies for software development, while following <strong>UIApplication</strong> programming paradigms (<strong>MVC</strong>)</li>
                     </category-item>
                 </category>
                 <category name="Projects">
                     <category-item title="UnbiasifyPlus" subtitle="Javascript/JQuery">
-                        <li>Winner of Coinsquare's Best Contribution to Open-Source Project (<a href="www.unbiasify.com">unbiasify.com</a>) at Hack the Valley 2018</li>
+                        <li>Winner of Coinsquare's Best Contribution to Open-Source Project (<a href="https://github.com/Unbiasify/unbiasify">Unbiasify</a>) at Hack the Valley 2018</li>
                         <li>Implemented visual filters across popular social media platforms to eliminate bias within the user experience</li>
                     </category-item>
                     <category-item title="PathFinder" subtitle="Java/Android SDK">
